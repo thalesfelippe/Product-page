@@ -10,6 +10,10 @@ body {
   font-weight: 400;
 }
 
+.form-control {
+  font-family: 'Montserrat', sans-serif;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -43,7 +47,8 @@ a{
   margin-top: -4px;
 }
 
-.btn-1 {
+.btn-1,
+.btn-2 {
   color: #222;
   background-color: #fff;
   font-size: 16px;
@@ -58,7 +63,17 @@ a{
   z-index: 1;
 }
 
-.btn-1:focus {
+.btn-2 {
+  background-color: #222;
+  color: #fff;
+}
+
+.btn-2:hover {
+  color: #fff;
+}
+
+.btn-1:focus,
+.btn-2:focus {
   box-shadow: none;
 }
 
@@ -72,14 +87,27 @@ a{
   left: 0;
   top: 0;
   width: 0%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.3);
   height: 100%;
   z-index: -1;
   transition: all 0.3s ease;
 }
 
-.btn-1:hover::before {
+.btn-1:hover::before,
+.btn-2:hover::before {
   width: 100%;
+}
+
+.btn-2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  background-color: rgba(255,255,255,0.1);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s ease;
 }
 
 .section-title {
@@ -634,4 +662,124 @@ a{
   line-height: 26px;
   font-weight: 400;
   color: #555;
+}
+
+.testimonial-section .owl-carousel .owl-nav {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.testimonial-section .owl-carousel .owl-nav button.owl-next:focus,
+.testimonial-section .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.testimonial-section .owl-carousel .owl-nav button.owl-next,
+.testimonial-section .owl-carousel .owl-nav button.owl-prev{
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #222;
+  font-weight: 500;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.testimonial-section .owl-carousel .owl-nav button.owl-next:hover,
+.testimonial-section .owl-carousel .owl-nav button.owl-prev:hover{
+  color: #fff;
+  background-color: #222;
+  transition: all 0.5s ease;
+}
+
+.testimonial-section .owl-carousel .owl-nav button.owl-next span,
+.testimonial-section .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+
+/* Faq section */
+.faq-section {
+  padding: 80px 0 80px;
+}
+
+.faq-section .faq-item {
+  margin-bottom: 40px;
+}
+
+.faq-section .faq-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #222;
+  margin: 0 0 10px;
+}
+
+.faq-section .faq-item p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555;
+  font-weight: 400;
+  margin: 0;
+}
+
+.faq-section .support-text {
+  margin: 15px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  line-height: 26px;
+}
+
+.faq-section .support-text a {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Newsletter section */
+.newsletter-section {
+  padding: 80px 0 80px;
+  background-image: url('../img/bg-02.jpg');
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.newsletter-section .section-title .subtitle {
+  color: #fff;
+}
+
+.newsletter-section .newsletter-form .form-group {
+  margin-bottom: 0;
+}
+
+.newsletter-section .newsletter-form .form-control {
+  height: 60px;
+  border-radius: 60px;
+  padding: 0 30px;
+  border: none;
+  outline: none;
+  color: #555;
+  font-weight: 400;
+}
+
+.newsletter-section .newsletter-form .form-control:focus{
+  box-shadow: none;
 }
