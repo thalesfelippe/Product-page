@@ -572,7 +572,9 @@ a{
 .testimonial-section {
   padding: 80px 0 80px;
   background-image: url('../img/bg-01.jpg');
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   z-index: 1;
@@ -744,6 +746,8 @@ a{
 .newsletter-section {
   padding: 80px 0 80px;
   background-image: url('../img/bg-02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: bottom;
   background-attachment: fixed;
   position: relative;
