@@ -1,3 +1,10 @@
+$(window).on("load",function(){
+    // Preloader
+    setTimeout(function(){
+    $(".preloader").hide();
+    }, 1500);
+});
+
 $(document).ready(function(){
 
     // Add scrollspy to <body>
