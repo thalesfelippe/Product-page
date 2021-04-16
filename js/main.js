@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    // Add scrollspy to <body>
+    $('body').scrollspy({target: ".navbar-nav"})
+
+
     //product carousel
     $('#product-carousel').owlCarousel({
         loop:true,
