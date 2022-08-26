@@ -1,24 +1,9 @@
 <h1 align="center">
-  <img 
-    src="https://i.imgur.com/LfeYYE8.png"
-  width="150"/>
   <p>Shyn - Product Page</p>
 </h1>
 
 <h1 align="center">
-<img src="https://i.imgur.com/4PSMpeO.png"
-  />
-  <img src="https://i.imgur.com/kmtvagL.png"
-  />
-  <img src="https://i.imgur.com/UNIbdPg.png"
-  />
-  <img src="https://i.imgur.com/e97UYgA.png"
-  />
-  <img src="https://i.imgur.com/OoaqokP.png"
-  />
-  <img src="https://i.imgur.com/p2eV1vl.png"
-  />
-  <img src="https://i.imgur.com/58rfEDH.png"
+<img src="https://i.imgur.com/8L6l3GM.png"
   />
 </h1>
 
